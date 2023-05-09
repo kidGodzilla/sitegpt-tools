@@ -1,4 +1,4 @@
-# sitegpt-tools
+# SiteGPT Tools
 
 Provides a basic interface in Javascript to control the [SiteGPT.ai](https://sitegpt.ai/?via=james) UI interface elements.
 
