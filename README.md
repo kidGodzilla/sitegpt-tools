@@ -10,6 +10,35 @@ You can include the following on your website to import the script:
 <script src="https://cdn.jsdelivr.net/gh/kidgodzilla/sitegpt-tools@latest/main.js"></script>
 ```
 
+## API
+
+### Hide or Show the [SiteGPT.ai](https://sitegpt.ai/?via=james) button
+
+```js
+window._sitegpt.hide(); // Hides the SiteGPT button
+window._sitegpt.show(); // Shows the SiteGPT button
+```
+
+### Open or Close the [SiteGPT.ai](https://sitegpt.ai/?via=james) button
+
+```js
+window._sitegpt.open(); // Opens the SiteGPT chat interface
+window._sitegpt.close(); // Closes the SiteGPT chat interface
+window._sitegpt.toggle(); // Toggles the SiteGPT chat interface
+```
+
+### Helper functions
+
+```js
+window._sitegpt.is_open() // Returns true if the chat window is currently open, otherwise false
+
+window._sitegpt.exists() // Determines if the chat interface is ready
+
+window._sitegpt.on_ready(function () {
+    // Executes when the chat interface is available. Can be used to hide the interface on load.
+});
+```
+
 ## Recipes
 
 ### Add [SiteGPT.ai](https://sitegpt.ai/?via=james) to Crisp.chat
