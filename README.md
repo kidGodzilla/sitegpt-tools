@@ -7,7 +7,7 @@ You can open, close, show, hide, or toggle the UI using this tiny script.
 You can include the following on your website to import the script:
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/kidgodzilla/sitegpt-tools@latest/main.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/kidgodzilla/sitegpt-tools@latest/m.js"></script>
 ```
 
 ## API
@@ -44,7 +44,7 @@ window._sitegpt.on_ready(function () {
 ### Add [SiteGPT.ai](https://sitegpt.ai/?via=james) to Crisp.chat
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/kidgodzilla/sitegpt-tools@latest/main.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/kidgodzilla/sitegpt-tools@latest/m.js"></script>
 <script>
   if (window.$crisp && window.$crisp.push) {
 	$crisp.push(["on", "session:loaded", window._sitegpt.add_to_crisp]);
