@@ -49,10 +49,12 @@ window._sitegpt.on_ready(function () {
   if (window.$crisp && window.$crisp.push) {
     $crisp.push(["on", "session:loaded", window._sitegpt.add_to_crisp]);
     $crisp.push(["on", "chat:opened", window._sitegpt.add_to_crisp]);
+    $crisp.push(["on", "chat:opened", window._sitegpt.close]);
   } else {
     window.CRISP_READY_TRIGGER = function() {
       $crisp.push(["on", "session:loaded", window._sitegpt.add_to_crisp]);
       $crisp.push(["on", "chat:opened", window._sitegpt.add_to_crisp]);
+      $crisp.push(["on", "chat:opened", window._sitegpt.close]);
     }
   }
 
