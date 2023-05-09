@@ -47,17 +47,15 @@ window._sitegpt.on_ready(function () {
 <script src="https://cdn.jsdelivr.net/gh/kidgodzilla/sitegpt-tools@latest/m.js"></script>
 <script>
   if (window.$crisp && window.$crisp.push) {
-	$crisp.push(["on", "session:loaded", window._sitegpt.add_to_crisp]);
-	$crisp.push(["on", "chat:opened", window._sitegpt.add_to_crisp]);
+    $crisp.push(["on", "session:loaded", window._sitegpt.add_to_crisp]);
+    $crisp.push(["on", "chat:opened", window._sitegpt.add_to_crisp]);
   } else {
     window.CRISP_READY_TRIGGER = function() {
       $crisp.push(["on", "session:loaded", window._sitegpt.add_to_crisp]);
-  	  $crisp.push(["on", "chat:opened", window._sitegpt.add_to_crisp]);
+      $crisp.push(["on", "chat:opened", window._sitegpt.add_to_crisp]);
     }
   }
 
-  window._sitegpt.on_ready(function () {
-    window._sitegpt.hide();
-  });
+  window._sitegpt.on_ready(window._sitegpt.hide);
 </script>
 ```
