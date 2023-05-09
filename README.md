@@ -46,21 +46,18 @@ window._sitegpt.on_ready(function () {
 ```html
 <script src="https://cdn.jsdelivr.net/gh/kidgodzilla/sitegpt-tools@latest/main.js"></script>
 <script>
-    if (window.$crisp && window.$crisp.push) {
-        $crisp.push(["on", "session:loaded", function() {
-            window._sitegpt.add_to_crisp();
-        }]);
-    } else {
-        window.CRISP_READY_TRIGGER = function() {
-            $crisp.push(["on", "session:loaded", function() {
-                window._sitegpt.add_to_crisp();
-            }]);
-        }
+  if (window.$crisp && window.$crisp.push) {
+	$crisp.push(["on", "session:loaded", window._sitegpt.add_to_crisp]);
+	$crisp.push(["on", "chat:opened", window._sitegpt.add_to_crisp]);
+  } else {
+    window.CRISP_READY_TRIGGER = function() {
+      $crisp.push(["on", "session:loaded", window._sitegpt.add_to_crisp]);
+  	  $crisp.push(["on", "chat:opened", window._sitegpt.add_to_crisp]);
     }
+  }
 
-    window._sitegpt.on_ready(function () {
-        window._sitegpt.hide();
-    });
+  window._sitegpt.on_ready(function () {
+    window._sitegpt.hide();
+  });
 </script>
 ```
-
