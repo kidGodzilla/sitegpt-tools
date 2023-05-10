@@ -1,0 +1,19 @@
+{
+  "name": "sitegpt-tools",
+  "version": "0.2.7",
+  "description": "Provides a basic interface in Javascript to control the [SiteGPT.ai](https://sitegpt.ai/?via=james) UI interface elements.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kidGodzilla/sitegpt-tools.git"
+  },
+  "author": "James Futhey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kidGodzilla/sitegpt-tools/issues"
+  },
+  "homepage": "https://github.com/kidGodzilla/sitegpt-tools#readme"
+}
