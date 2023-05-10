@@ -15,5 +15,6 @@
   "bugs": {
     "url": "https://github.com/kidGodzilla/sitegpt-tools/issues"
   },
-  "homepage": "https://github.com/kidGodzilla/sitegpt-tools#readme"
+  "homepage": "https://github.com/kidGodzilla/sitegpt-tools#readme",
+  "keywords": ["ChatGPT", "SiteGPT", "SiteGPT.ai"]
 }
